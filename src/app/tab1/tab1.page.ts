@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 export class Tab1Page {
 
   constructor() {}
+  AchaBar(){
+
+    window.open('https://www.google.com/maps/search/bares+santa+f%C3%A9+do+sul/@-20.2055546,-50.9282894,14z/data=!3m1!4b1', '_blank').focus();
+  }
 
 }

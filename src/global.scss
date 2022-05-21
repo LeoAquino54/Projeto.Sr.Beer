@@ -24,3 +24,71 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.buscar {
+    text-align: center;
+}
+
+:root {
+    --ion-font-family: 'Varela Round', sans-serif;
+    /* barra superior */
+    --ion-toolbar-background: #29065a;
+    --ion-toolbar-color: white;
+
+    --ion-background-color: linear-gradient(180deg, #29065a 0%, #7314fd 100%);
+
+    /* barra inferior */
+    --ion-tab-bar-background: #29065a;
+    --ion-tab-bar-color: #44578a;
+    --ion-tab-bar-color-selected: #ffc400;
+}
+.teste{
+    --ion-background-color: linear-gradient(180deg, #ffffff 40%, #ffc400 95%);
+}
+.color{
+    color: #ffc400
+
+}
+.conteudo{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.btnm{
+    transform: scale(1.03);
+    animation: nn 2s infinite alternate;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.img-item{
+    padding: 15px;
+    padding-bottom: 100px;
+    padding-top:  70px;
+    
+    width: 500%;
+    max-width: 400px;
+
+    animation: del 10s infinite alternate;
+}
+
+@keyframes del{
+    0%{
+        transform: translate(0px, 5px) scale(1.4);
+    }
+    100%{
+        transform: translate(0px, -5px) scale(1.3);
+    }
+}
+
+@keyframes nn{
+    0%{
+        transform: translate(0px, 1px) rotate(0deg);
+    }
+    100%{
+        transform: translate(0px, -1px)rotate (45deg);
+    }
+}
