@@ -1,27 +1,31 @@
-<ion-header  [translucent]="true" >
-<ion-toolbar >
-  <ion-searchbar (click)="AchaBar()" class="color animate__animated animate__fadeInLeft color"showCancelButton="never"></ion-searchbar>
- 
-</ion-toolbar>
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-searchbar (click)="AchaBar()" class=" animate__animated animate__fadeInLeft"
+      showCancelButton="never"></ion-searchbar>
+
+  </ion-toolbar>
 
 
-<ion-content class="teste" [fullscreen]="true">
+  <ion-content class="teste" [fullscreen]="true">
 
-  <div class="animate__animated animate__fadeInLeft">
-    <img 
-    class="img-item"
-    src="assets/img/BEER4.jpg"
-    alt="Imagem da Cerveja"
-    />
-  
-  </div>
+    <div class="animate__animated animate__fadeInLeft conteudo">
+      <img class="img-item" src="assets/img/BEER4.jpg" alt="Imagem da Cerveja" />
 
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
+    </div>
+  -->
+  <ion-header [translucent]="true">
+    
+      <ion-item  lines="none">
+    
+        <ion-searchbar (click)="AchaBar()" class=" animate__animated animate__fadeInLeft"
+      showCancelButton="never"></ion-searchbar>
+      </ion-item>
   </ion-header>
-
-</ion-content>
-
-
+  
+  <ion-content>
+    <div class="conteudo animate__animated animate__fadeInLeft">
+      <img
+      class="img-item" src="assets/img/BEER5.png" alt="Imagem da Cerveja" />
+      
+    </div>
+  </ion-content>
