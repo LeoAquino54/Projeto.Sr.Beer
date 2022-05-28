@@ -13,19 +13,21 @@
 
     </div>
   -->
-  <ion-header [translucent]="true">
-    
-      <ion-item lines="none" >
-    
-        <ion-searchbar (click)="AchaBar()" class="animate__animated animate__fadeInLeft"
-      showCancelButton="never"></ion-searchbar>
-      </ion-item>
-  </ion-header>
-  
-  <ion-content >
-    <div class=" conteudo animate__animated animate__fadeInLeft">
-      <img
-      class="img-item" src="assets/img/BEER5.png" alt="Imagem da Cerveja" />
-      
-    </div>
-  </ion-content>
+<ion-header [translucent]="true">
+  <ion-item button routerLink="/usuario">
+    <ion-avatar slot="start">
+      <img src="assets/img/img1.png">
+    </ion-avatar>
+    <ion-label>
+      Seja Bem Vindo...
+    </ion-label>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <div class=" conteudo animate__animated animate__fadeInLeft">
+    <img class="img-item" src="assets/img/BEER5.png" alt="Imagem da Cerveja" />
+
+
+  </div>
+</ion-content>
