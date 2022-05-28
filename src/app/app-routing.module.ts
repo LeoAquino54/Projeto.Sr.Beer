@@ -9,6 +9,15 @@ const routes: Routes = [
   {
     path: 'tab4',
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+  },
+  
+  {
+    path: 'usuario',
+    loadChildren: () => import('./usuario/usuario.module').then( m => m.UsuarioPageModule)
+  },
+  {
+    path: 'cadastrocomercio',
+    loadChildren: () => import('./cadastrocomercio/cadastrocomercio.module').then( m => m.CadastrocomercioPageModule)
   }
 ];
 @NgModule({

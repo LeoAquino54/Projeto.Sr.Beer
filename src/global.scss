@@ -32,19 +32,19 @@
 :root {
     --ion-font-family: 'Varela Round', sans-serif;
     /* barra superior */
-    --ion-toolbar-background: #ffffff;
-    --ion-toolbar-color: #fcfbf9;
+    --ion-toolbar-background: #f5e982;
+    --ion-toolbar-color: #A68646;
     
 
-    --ion-background-color: linear-gradient(180deg, #f5e982 0%, #ffc400 100%);
+    --ion-background-color: linear-gradient(180deg, #f5e982 0%, #EDD63E 100%);
 
     /* barra inferior */
-    --ion-tab-bar-background: #ffc400;
-    --ion-tab-bar-color: #020100;
+    --ion-tab-bar-background: #EDD63E;
+    --ion-tab-bar-color: #A68646;
     --ion-tab-bar-color-selected: #fffefb;
 }
 .teste{
-    --ion-background-color: linear-gradient(180deg, #ffc400 40%, #ffc400 95%);
+    --ion-background-color: linear-gradient(180deg, #EDD63E 40%, #EDD63E 95%);
 }
 
 
