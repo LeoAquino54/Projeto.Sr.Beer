@@ -4,12 +4,13 @@
 
   </ion-toolbar>
   <ion-item>
-    <ion-label color="light"  position="stacked" class="animate__animated animate__fadeInLeft ">Email</ion-label>
-    <ion-input></ion-input>
+    <ion-input color="light" placeholder="Email"  position="stacked" class="animate__animated animate__fadeInLeft "></ion-input>
+  
   </ion-item>
+<br>
   <ion-item>
-    <ion-label color="light"  position="stacked" class="animate__animated animate__fadeInLeft">Senha</ion-label>
-    <ion-input></ion-input>
+    <ion-input type="password" color="light" placeholder="Senha" position="stacked" class="animate__animated animate__fadeInLeft"></ion-input>
+    
   </ion-item>
   <ion-content class="teste" [fullscreen]="true">
 
@@ -24,7 +25,7 @@
         <ion-icon class="btnm" color="success" name="checkmark-circle-outline"></ion-icon>
 
       </ion-button>
-      <ion-button  color="dark" size="large">
+      <ion-button  routerLink="/tabs/tab1" color="dark" size="large">
 
         <ion-icon class="btnm" color="danger" name="close-outline"></ion-icon>
 
