@@ -4,25 +4,25 @@
 
   </ion-toolbar>
   <ion-item>
-    <ion-input color="light" placeholder="Nome do Usuario" position="stacked"
+    <ion-input color="light" [(ngModel)]="cliente.Nome_Usuario" placeholder="Nome do Usuario" position="stacked"
       class="animate__animated animate__fadeInLeft "></ion-input>
 
   </ion-item>
   <br>
   <ion-item>
-    <ion-input color="light" placeholder="Email" position="stacked" class="animate__animated animate__fadeInLeft ">
+    <ion-input color="light" [(ngModel)]="cliente.Email_Usuario" placeholder="Email" position="stacked" class="animate__animated animate__fadeInLeft ">
     </ion-input>
 
   </ion-item>
   <br>
   <ion-item>
-    <ion-input color="light" placeholder="Senha" position="stacked" class="animate__animated animate__fadeInLeft ">
+    <ion-input color="light" [(ngModel)]="cliente.Senha_Usuario" placeholder="Senha" position="stacked" class="animate__animated animate__fadeInLeft ">
     </ion-input>
 
   </ion-item>
   <br>
   <ion-item>
-    <ion-input color="light" placeholder="Confirmação da Senha" position="stacked"
+    <ion-input color="light" [(ngModel)]="cliente.Senha_Usuario" placeholder="Confirmação da Senha" position="stacked"
       class="animate__animated animate__fadeInLeft "></ion-input>
 
   </ion-item>
@@ -35,7 +35,7 @@
       </ion-toolbar>
     </ion-header>
     <div class="animate__animated animate__fadeInLeft btns">
-      <ion-button color="dark" size="large">
+      <ion-button (click)="salvarCLiente()" color="dark" size="large">
 
         <ion-icon class="btnm" color="success" name="checkmark-circle-outline"></ion-icon>
 

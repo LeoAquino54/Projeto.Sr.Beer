@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { UsuarioService } from '../Services/usuario.service';
 
 @Component({
   selector: 'app-tab4',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tab4.page.scss'],
 })
 export class Tab4Page implements OnInit {
+  usuario={
+    Email_Usuario:'',
+    Senha_Usuario:''
+  }
+  constructor(private usuarioService:UsuarioService, private navController: NavController) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit(): void {
+    
   }
 
+  login() {
+    this.usuarioService.login(this.usuario).subscribe(res=>{
+      console.log(res)
+    })
+  }
 }
+
